@@ -21,17 +21,20 @@ const CodeEditor = () => {
   };
 
   return (
-    <Box>
-      <HStack spacing={4}>
-        <Box w="50%">
+      <Box bg="#161e32" color="gray.500" px={6} py={8}>
+      <HStack spacing={2}>
+        <Box w="100%">
           <LanguageSelector language={language} onSelect={onSelect} />
+          <Box borderLeftRadius={20} className="overflow-hidden">
           <Editor
+
+            
             options={{
               minimap: {
                 enabled: false,
               },
             }}
-            height="75vh"
+            height="85vh"
             theme="vs-dark"
             language={language}
             defaultValue={CODE_SNIPPETS[language]}
@@ -39,6 +42,7 @@ const CodeEditor = () => {
             value={value}
             onChange={(value) => setValue(value)}
           />
+          </Box>
         </Box>
         <Output editorRef={editorRef} language={language} />
       </HStack>

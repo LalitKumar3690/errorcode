@@ -44,11 +44,12 @@ const Output = ({ editorRef, language }) => {
         Run Code
       </Button>
       <Box
-        height="75vh"
+        height="85vh"
         p={2}
         color={isError ? "red.400" : ""}
         border="1px solid"
-        borderRadius={4}
+
+        borderRightRadius={20}
         borderColor={isError ? "red.500" : "#333"}
       >
         {output
