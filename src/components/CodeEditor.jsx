@@ -21,7 +21,9 @@ const CodeEditor = () => {
   };
 
   return (
-      <Box bg="#161e32" color="gray.500" px={6} py={8}>
+    <div className="w-full h-full pt-20 bg-[#161e32]">
+      <Box   color="gray.500" px={6} py={8}
+      >
       <HStack spacing={2}>
         <Box w="100%">
           <LanguageSelector language={language} onSelect={onSelect} />
@@ -47,6 +49,7 @@ const CodeEditor = () => {
         <Output editorRef={editorRef} language={language} />
       </HStack>
     </Box>
+    </div>
   );
 };
 export default CodeEditor;

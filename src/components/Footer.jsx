@@ -1,9 +1,10 @@
 import React from 'react';
 import Logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='w-full h-full bg-gray-500'>
+        <div className='w-full h-full bg-gray-500 '>
         <footer className="py-16 w-full max-w-6xl mx-auto text-center ">
             <div className="text-center mb-8 flex justify-center">
                 
@@ -14,10 +15,10 @@ const Footer = () => {
             </div>
             <nav className="mb-8">
                 <ul className="flex justify-center space-x-6 sm:space-x-12 text-gray-700 text-lg">
-                    <li><a href="#" className="hover:text-gray-900 text-gray-100">Home</a></li>
-                    <li><a href="#" className="hover:text-gray-900 text-gray-100">Docs</a></li>
-                    <li><a href="#" className="hover:text-gray-900 text-gray-100">About</a></li>
-                    <li><a href="#" className="hover:text-gray-900 text-gray-100">Contact us</a></li>
+                    <Link to='/' onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" });}}> <li className="hover:text-gray-900 text-gray-100">Home</li></Link>
+                    <Link to='Document' onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" });}}> <li className="hover:text-gray-900 text-gray-100">Docs</li></Link>
+                    <Link to='aboutus' onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" });}}> <li  className="hover:text-gray-900 text-gray-100">About</li></Link>
+                    <Link to='contact' onClick={()=>{window.scrollTo({ top: 0, behavior: "smooth" });}}> <li className="hover:text-gray-900 text-gray-100">Contact us</li></Link>
                     {/* <li><a href="#" className="hover:text-gray-900 text-gray-100">Help</a></li> */}
                 </ul>
             </nav>
