@@ -6,8 +6,8 @@ const Document = () => {
       <h1 className="text-3xl font-bold mb-8">Documentation Home</h1>
       
       <Section title="Start Here">
-        <Card title="What is Codex.code?" description="Learn about Codex.code and how it can help you manage your development environments." />
-        <Card title="Getting Started" description="Get started with Codex.code and learn how to use and start your development with simple editor." />
+        <Card title="What is Online IDE?" description="Learn about Online IDE and how it can help you manage your development environments." />
+        <Card title="Getting Started" description="Get started with Online IDE and learn how to use and start your development with simple editor." />
       </Section>
       
       <Section title="Configure">
@@ -22,7 +22,7 @@ const Document = () => {
       </Section>
       
       <Section title="helps">
-        <Card title="Contacting" description="Manage your Codex.code future updation sharing our feedbacks." />
+        <Card title="Contacting" description="Manage your Online IDE future updation sharing our feedbacks." />
       </Section>
     </div>
   );

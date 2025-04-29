@@ -12,9 +12,10 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
+    <div className="w-full">
     <Router>
       <Nav/>
-      <div>
+      <div className="w-full h-auto">
         {/* Define Routes for navigation */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,6 +29,7 @@ function App() {
       </div>
         <Footer />
     </Router>
+    </div>
   );
 }
 

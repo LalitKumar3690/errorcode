@@ -14,7 +14,7 @@ function Home() {
       <div className='flex w-[85%] h-full justify-around flex-col items-center gap-10'>
         <div className='flex flex-col gap-12 items-center w-[70%] h-[70%]'>
           <div>
-            <h1 className='text-6xl text-gray-200 font-sans text-center mt-20'>Welcome to CODEX.code</h1>
+            <h1 className='text-6xl text-gray-200 font-sans text-center mt-20'>Welcome to Online IDE</h1>
             <h2 className='text-2xl text-gray-300 font-sans text-center mt-5'>
               The best code editor for all your programming needs
             </h2>

@@ -10,7 +10,7 @@ const Footer = () => {
                 
             <div className='flex h-full items-center gap-2 cursor-pointer'>
                 <img src={Logo} className='w-16 h-full '></img>
-                <h1 className='text-gray-300 text-2xl font-sans'>CODEX.code</h1>
+                <h1 className='text-gray-300 text-2xl font-sans'>Online IDE</h1>
             </div>
             </div>
             <nav className="mb-8">

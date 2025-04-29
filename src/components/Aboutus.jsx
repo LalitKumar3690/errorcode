@@ -1,31 +1,31 @@
 import React from 'react';
-import Ronak from '../assets/ronak.jpg'
+import Deepak from '../assets/deepak.jpeg'
+import Poonam from '../assets/poonam.jpeg'
+import Mentor from '../assets/Mentor.jpg'
+
 
 const projects = [
   {
-    title: "Ronak Prajapat",
-    description: "Designing and building destinations that offer entertainment, recreation, and relaxation in perfect harmony.",
-    image: `${Ronak}`,
-    alt: "Leisure & Themed Projects Image",
+    title: "Mr. Suman Kumar",
+    image: Mentor,
+    alt: "Image 1",
   },
   {
-    title: "Lalit Kumar",
-    description: "Creating luxurious that blend exquisite design with unmatched hospitality, offering unforgettable getaways.",
-    image: "https://versai.in/static/media/lalit.5ef6cd996199f3cd56c6.png",
-    alt: "Hospitality Projects Image",
+    title: "Deepak Sharma",
+    image: Deepak,
+    alt: "Image 2",
   },
   {
-    title: "Bhawani Shankar",
-    description: "Crafting immersive spaces that celebrate heritage and artistry, fostering cultural understanding and appreciation.",
-    image: "https://versai.in/static/media/bhawani.b8c4b427723a57f04661.png",
-    alt: "Museums & Pavilions Image",
+    title: "Poonam Panchariya",
+    image: Poonam,
+    alt: "Image 3",
   },
   
 ];
 
 function ProjectCard({ title, description, image, alt }) {
   return (
-    <div className="w-[15vw] h-[40vh] overflow-hidden shadow-lg m-4 bg-gray-600 rounded-lg">
+    <div className="w-full  md:w-[20rem] h-[45vh] overflow-hidden shadow-lg m-4 bg-gray-600 rounded-lg">
 
       <img className="w-full h-[85%] object-cover rounded-t-lg" src={image} alt={alt} />
       <div className="px-6 py-4">
@@ -38,10 +38,10 @@ function ProjectCard({ title, description, image, alt }) {
 
 function Aboutus() {
   return (
-    <div className='w-full h-full pt-20 bg-gradient-to-t to-slate-400  from-slate-400'>
-    <div className="container flex flex-col gap-24 mx-auto h-[75vh] justify-center items-center">
-      <h1 className='w-2/4 border-b-2 h-24 border-gray-500 text-center text-6xl text-gray-800 font-semibold'>Team Members</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className='w-full h-auto pt-32 bg-gradient-to-t to-slate-400  from-slate-400'>
+    <div className="w-full px-10 flex flex-col mx-auto min-h-[75vh] justify-center items-center">
+      <h1 className='w-4/5 md:w-2/3 2xl:w-2/4 border-b-2 pb-5 border-gray-500 text-center text-4xl  md:text-4xl xl:text-6xl text-gray-800 font-semibold'>Collaborators</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-5 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
